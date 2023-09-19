@@ -32,12 +32,16 @@ http://52.199.48.20/
 https://docs.google.com/spreadsheets/d/1n6hXzzoKsQN0U5_PhFXmSC5hxSuLiUHC6laWQqFngb8/edit#gid=2048512610
 
 # 実装した機能についての画像やGIFおよびその説明
+・同じ数字が揃うと、裏返しのままとして、表示を継続します。
 [![Image from Gyazo](https://i.gyazo.com/a9312f4df88c98391705477c752ba5aa.gif)](https://gyazo.com/a9312f4df88c98391705477c752ba5aa)
 
+・数字が異なる場合、１秒後に元の画像に戻ります。
 [![Image from Gyazo](https://i.gyazo.com/eabe6b6b66fee24d7356b1f93484a9bc.gif)](https://gyazo.com/eabe6b6b66fee24d7356b1f93484a9bc)
 
+・１０組揃えると、「もう一度遊ぶ」ボタンが表示されます。
 [![Image from Gyazo](https://i.gyazo.com/3105034ab58c13bc55405c5b96d70cf3.gif)](https://gyazo.com/3105034ab58c13bc55405c5b96d70cf3)
 
+・「もう一度遊ぶ」ボタンをクリックすると、画像の表示や経過時間がリセットされます。
 [![Image from Gyazo](https://i.gyazo.com/428ddc6a27d2aa8e72f2984d2abac845.gif)](https://gyazo.com/428ddc6a27d2aa8e72f2984d2abac845)
 
 # 実装予定の機能
