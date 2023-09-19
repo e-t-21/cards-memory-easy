@@ -12,10 +12,10 @@
 default: &default
   adapter: mysql2
   encoding: utf8
-  pool: cards-memory-easy_production
+  pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
   username: root
-  password: <%= ENV['DATABASE_PASSWORD'] %>
-  socket: /var/lib/mysql/mysql.sock
+  password:
+  socket: /tmp/mysql.sock
 
 development:
   <<: *default
@@ -50,6 +50,8 @@ test:
 #
 production:
   <<: *default
-  database: cards_memory_easy_production
-  username: cards_memory_easy
-  password: <%= ENV["CARDS_MEMORY_EASY_DATABASE_PASSWORD"] %>
+  adapter: mysql2
+  database: cards-memory-easy_production
+  username: root
+  password: <%= ENV['DATABASE_PASSWORD'] %>
+  socket: /var/lib/mysql/mysql.sock
