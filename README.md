@@ -3,23 +3,24 @@ cards-memory-easy
 
 # アプリケーション概要
 神経衰弱ゲームです。
-同じ数字の組み合わせを１０組揃えると、ゲームクリアです。
+同じ数字の組み合わせを10組揃えると、ゲームクリアです。
 
 # URL
 http://52.199.48.20/
 
 # テスト用アカウント
 ・Basic認証ID： admin
+
 ・Basic認証パスワード： 12345678
 
 # 利用方法
 ・画像をクリックして、カードを裏返し、数字を表示します。
 
-・カードを２回めくり、同じ数字の場合、裏返しのままになります。
+・カードを2回めくり、同じ数字の場合、裏返しのままになります。
 
-・めくったカードの数字が異なる場合、１秒後に元の画像に戻ります。
+・めくったカードの数字が異なる場合、1秒後に元の画像に戻ります。
 
-・１０組揃えるとゲームクリアとなり、「もう一度遊ぶ」ボタンが表示されます。
+・10組揃えるとゲームクリアとなり、「もう一度遊ぶ」ボタンが表示されます。
 
 ・「もう一度遊ぶ」ボタンをクリックすると、カードの状態や経過時間がリセットされます。
 
@@ -35,10 +36,10 @@ https://docs.google.com/spreadsheets/d/1n6hXzzoKsQN0U5_PhFXmSC5hxSuLiUHC6laWQqFn
 ・同じ数字が揃うと、裏返しのままとして、表示を継続します。
 [![Image from Gyazo](https://i.gyazo.com/a9312f4df88c98391705477c752ba5aa.gif)](https://gyazo.com/a9312f4df88c98391705477c752ba5aa)
 
-・数字が異なる場合、１秒後に元の画像に戻ります。
+・数字が異なる場合、1秒後に元の画像に戻ります。
 [![Image from Gyazo](https://i.gyazo.com/eabe6b6b66fee24d7356b1f93484a9bc.gif)](https://gyazo.com/eabe6b6b66fee24d7356b1f93484a9bc)
 
-・１０組揃えると、「もう一度遊ぶ」ボタンが表示されます。
+・10組揃えると、「もう一度遊ぶ」ボタンが表示されます。
 [![Image from Gyazo](https://i.gyazo.com/3105034ab58c13bc55405c5b96d70cf3.gif)](https://gyazo.com/3105034ab58c13bc55405c5b96d70cf3)
 
 ・「もう一度遊ぶ」ボタンをクリックすると、画像の表示や経過時間がリセットされます。
@@ -59,8 +60,11 @@ https://docs.google.com/spreadsheets/d/1n6hXzzoKsQN0U5_PhFXmSC5hxSuLiUHC6laWQqFn
 
 # ローカルでの動作方法
 ・以下のコマンドを順に実行して下さい。
+
 % git clone https://github.com/e-t-21/cards-memory-easy.git
+
 % cd cards-memory-easy
+
 % bundle install
 
 # 工夫したポイント
@@ -69,7 +73,9 @@ https://docs.google.com/spreadsheets/d/1n6hXzzoKsQN0U5_PhFXmSC5hxSuLiUHC6laWQqFn
 ・スマートフォンでの表示に対応できるよう、レスポンシブ対応を行いました。
 
 # 改善点
-・URLにアクセスすると、経過時間が動き出してしまいます。アクセスした直後の場合、スタートボタンを設け、アクセス直後に経過時間が動かないようにします。
+・URLにアクセスすると、経過時間が動き出してしまいます。
+
+・アクセスした直後の場合、スタートボタンを設け、アクセス直後に経過時間が動かないようにします。
 
 # 制作時間
-・約９時間
+・約9時間
